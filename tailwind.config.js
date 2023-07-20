@@ -1,4 +1,6 @@
-const plugin = require("tailwindcss/plugin");
+import plugin from "tailwindcss/plugin";
+import forms from "@tailwindcss/forms";
+import aspect from "@tailwindcss/aspect-ratio";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -7,8 +9,8 @@ export default {
 		extend: {},
 	},
 	plugins: [
-		require("@tailwindcss/forms"),
-		require("@tailwindcss/aspect-ratio"),
+		forms,
+		aspect,
 		plugin(({ matchUtilities }) => {
 			matchUtilities({});
 		}),

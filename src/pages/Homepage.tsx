@@ -1,5 +1,7 @@
 import { useState } from "react";
 import reactLogo from "@/assets/react.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Homepage() {
 	const [count, setCount] = useState(0);
@@ -21,6 +23,9 @@ function Homepage() {
 				<p>
 					Edit <code>src/App.tsx</code> and save to test HMR
 				</p>
+				<FontAwesomeIcon icon={faEnvelope} />
+				<FontAwesomeIcon icon={faEnvelope} size="2x" />
+				<FontAwesomeIcon icon={faEnvelope} size="2x" />
 			</div>
 			<p className="read-the-docs">Click on the Vite and React logos to learn more</p>
 		</>
